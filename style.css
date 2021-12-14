@@ -144,22 +144,34 @@ body {
     bottom: 100%;
     transition: .5s;
     transition-delay: .48s;
-
 }
 
 .just-border {
     position: fixed;
+    pointer-events: none;
     height: 86vh;
     width: 86vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background: linear-gradient(80deg, rgba(0,0,0,0) 30%, rgba(214, 231, 243, 0.25) 50%, rgba(0,0,0,0) 70%);
+    background-size: 150% 150%;
+    background-position: left;
+    box-shadow: 0px 0px 15px rgb(12,12,12);
     border: 15px solid rgb(12,12,12);
+    overflow: hidden;
     z-index: 1;
     opacity: 0;
-    transition: 2s opacity;
-    overflow: hidden;
-    pointer-events: none;
+    transition: 2s opacity 0.3s border;
+    animation: reflection 15s linear infinite alternate;
+}
+
+@keyframes reflection {
+    0%{
+        background-size: 150% 150%;
+    }100%{
+        background-size: 165% 175%;
+    }
 }
 
 .aloc-btn-change-color {
@@ -284,6 +296,8 @@ body {
     height: 55vh;
     width: auto;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,.4));
+    filter: brightness(0%);
+    transition: 0.3s filter;
 }
 
 .coq1 {
@@ -292,7 +306,7 @@ body {
     bottom: 30vh;
     transform: translate(-30%, 15%) rotate(0deg);
     z-index: -1;
-    animation: brilho infinite 3s;
+    animation: brilhoB infinite 3s;
 }
 
 .coq2 {
@@ -301,21 +315,36 @@ body {
     bottom: 30vh;
     transform: translate(30%, 15%) rotate(-5deg) scaleX(-1);
     z-index: -1;
-    animation: brilho infinite 2s;
+    animation: brilhoB infinite 2s;
 }
 
-@keyframes brilho {
+@keyframes brilhoB {
     0% {
-        filter: brightness(0%) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
     } 
     35% {
-        filter: brightness(0%) drop-shadow(0px 0px 15px rgba(0,0,0,.3));    
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0,.3));    
     }
     80%{
-        filter: brightness(0%) drop-shadow(0px 0px 10px rgba(0,0,0,.25));
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0,.25));
     }
     100% {
-        filter: brightness(0%) drop-shadow(0px 0px 10px rgba(0,0,0,.2));
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0,.2));
+    }
+}
+
+@keyframes brilhoW {
+    0% {
+        filter: drop-shadow(0px 0px 10px rgba(240, 240, 240, 0.3));
+    } 
+    35% {
+        filter: drop-shadow(0px 0px 15px rgba(240, 240, 240,.4));    
+    }
+    80%{
+        filter: drop-shadow(0px 0px 10px rgba(240, 240, 240,.35));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px rgba(240, 240, 240,.3));
     }
 }
 

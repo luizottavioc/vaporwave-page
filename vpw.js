@@ -32,10 +32,21 @@ document.querySelector('#changecolor').addEventListener('change', function(){
         $('.sun').css('filter', 'drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.7))');
         $('.sun table tr').css('background-color', 'rgba(255,255,255,0.8)');
         $('.street table tr td').css('background-image','radial-gradient(rgb(35, 38, 114), rgb(65, 11, 128))');
+        $('.just-border').css('border','15px solid rgb(240,240,240)');
+        $('.just-border').css('box-shadow','0px 0px 15px rgb(240,240,240)');
+        $('.aloc-all-page img').css('filter','brightness(100%)');
+        $('.coq1').css('animation','brilhoW infinite 2s');
+        $('.coq2').css('animation','brilhoW infinite 2s');
     }else{
         $('body').css('background-position', 'bottom');
         $('.sun').css('filter', 'drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7))');
         $('.sun table tr').css('background-color', 'rgba(0,0,0,0.8)'); 
         $('.street table tr td').css('background-image','radial-gradient(rgb(166, 43, 177), rgb(127, 49, 138)');
+        $('.just-border').css('border','15px solid rgb(12,12,12)');
+        $('.just-border').css('box-shadow','0px 0px 15px rgb(12,12,12)');
+        $('.aloc-all-page img').css('filter','brightness(0%)');
+        $('.coq1').css('animation','brilhoB infinite 2s');
+        $('.coq2').css('animation','brilhoB infinite 2s');
+
     }
 });
