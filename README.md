@@ -1,5 +1,5 @@
 # VaporwavePage 🌇
-Dinamic page created using pure <b>CSS</b>, <b>Javascript</b> and <b>JQuery</b> with "vaporwave" theme. Application of pseudoelements, SVG, DOM manipulation, animations, transitions, images, and others concepts.
+Dinamic page created using pure <b>CSS</b>, <b>Javascript</b> and <b>JQuery</b> with "vaporwave" theme. Application of pseudoelements, SVG, DOM manipulation, animations, transitions, images, and others concepts (just 60% responsive).
 
 <div align="center">
   <a href="https://github.com/luizottavioc/VaporwavePage/blob/main/index.html"> Click here to acess the HTML code </a><br>
