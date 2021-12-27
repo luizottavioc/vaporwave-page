@@ -456,7 +456,7 @@ body {
     width: 270px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -18.8%);
+    transform: translate(-50%, -15.8%);
     /* background-color: white; */
     border-radius: 50% 50% 0 0;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
@@ -490,6 +490,44 @@ body {
     }
     100% {
         transform: translateY(27px);
+    }
+}
+
+@media (max-width: 970px) and (min-width:861px){
+    .aloc-all-page img {
+        height: 45vh;
+    }
+    .sun {
+        height: 220px;
+        width: 220px;
+        transform: translate(-50%, -10.8%);
+    }
+}
+
+@media (max-width: 860px) {
+    .aloc-all-page img {
+        height: 35vh;
+    }
+
+    .just-border {
+        height: 87vh;
+        width: 92vw;
+    }
+
+    .just-waves{
+        height: 87vh;
+        width: 92vw;
+    }
+    
+    .aloc-btn-change-color {
+        height: 87vh;
+        width: 92vw;
+    }
+
+    .sun {
+        height: 180px;
+        width: 180px;
+        transform: translate(-50%, -5.8%);
     }
 }
 
